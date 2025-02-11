@@ -17,8 +17,9 @@ To get started with the application, follow the steps below to set up both the b
     npm install<br>
 **Set Up MongoDB:** <br>
 Ensure you have MongoDB running on your local machine. If you're using MongoDB Atlas (cloud database), replace the local connection string in index.js with your MongoDB Atlas URI.<br>
-**Start the Backend Server: Run the following command to start the backend server:**
-  npm start<br>
+**Start the Backend Server:**
+  run the following command <br>
+    npm start<br>
 
 # Frontend
 The frontend consists of a simple user interface built using HTML, CSS, and JavaScript.<br>
