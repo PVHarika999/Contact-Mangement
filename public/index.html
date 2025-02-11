@@ -1,1 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Management App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1>Manage Your Contacts</h1>
+
+      <!-- Search Bar -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by Name..."
+        onkeyup="filterContacts()"
+      />
+
+      <!-- Add Contact Button -->
+      <button onclick="showContactModal()">Add New Contact</button>
+
+      <!-- Contacts Table -->
+      <table id="contactsTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="contactsList">
+          <!-- Dynamic contact list will be populated here -->
+        </tbody>
+      </table>
+
+      <!-- Modal for Adding/Editing Contact -->
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeContactModal()">&times;</span>
+          <h2 id="modalHeader">Add New Contact</h2>
+          <form id="contactForm">
+            <label for="contactName">Name:</label>
+            <input type="text" id="contactName" required /><br /><br />
+
+            <label for="contactPhone">Contact:</label>
+            <input type="text" id="contactPhone" required /><br /><br />
+
+            <button type="submit">Save Contact</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
 
